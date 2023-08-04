@@ -1,0 +1,22 @@
+.display-1{
+color:red !important;
+}
+
+
+.custom-text-justify {
+    text-align: justify;
+    text-justify: inter-word; /* For additional browser support */
+  }
+
+body{
+font-family: 'Inter', sans-serif;
+font-family: 'Poppins', sans-serif;
+background-color: rgb(0, 0, 0);
+color:white ;
+  background-image: url("https://th.bing.com/th/id/R.0dce05235a62032367e9c13935b43c4a?rik=W5cqxPmYZwT2gg&riu=http%3a%2f%2fs1.picswalls.com%2fwallpapers%2f2016%2f06%2f06%2fbeach-image_09061059_305.jpg&ehk=NwW9RRGsjTYqLq6SLAgbgMwHK%2fvgd7GEO3XCIUqbea8%3d&risl=&pid=ImgRaw&r=0");
+  color: Black !important;
+  background: cover;
+  background-color: #cccccc;
+
+}
+
