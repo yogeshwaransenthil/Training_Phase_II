@@ -13,15 +13,14 @@ namespace EFCF
     {
         public void AddNewDept()
         {
-            // using is keyword used to use the context to the entire code
-            // context is used to perform some operation on db using empluyeedbcontext - that contain table
+ 
 
             using (var context = new EmployeeDataBase())
             {
                 var dept = new Dept()
                 {
-                    DeptNo = 1,
-                    DeptName = "M.Sc Software Systems"
+                    DeptNo = 2,
+                    DeptName = "ECE"
                 };
 
                 context.Depts.Add(dept);
@@ -31,14 +30,13 @@ namespace EFCF
         
         public void UpdateDept()
         {
-            // using is keywird used to use the context to the entire code
-            // context is used to perform some operation on db using empluyeedbcontext - that contain table
+           
 
             var context = new EmployeeDataBase();
 
-            var seldept = context.Depts.FirstOrDefault(d => d.DeptNo == 1);
+            var seldept = context.Depts.FirstOrDefault(d => d.DeptNo == 2);
 
-            seldept.DeptName = "M.Sc";
+            seldept.DeptName = "ECE";
 
             context.SaveChanges();
             
@@ -46,8 +44,6 @@ namespace EFCF
         
         public void DeleteDept()
         {
-            // using is keywird used to use the context to the entire code
-            // context is used to perform some operation on db using empluyeedbcontext - that contain table
 
             var context = new EmployeeDataBase();
 
