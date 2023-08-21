@@ -1,0 +1,13 @@
+<div class="calculator">
+    <input [(ngModel)]="num1" class="input-field">
+    <select [(ngModel)]="operator" class="operator-select">
+      <option value="add">+</option>
+      <option value="subtract">-</option>
+      <option value="multiply">*</option>
+      <option value="divide">/</option>
+    </select>
+    <input [(ngModel)]="num2" class="input-field">
+    <button (click)="calculate()">Calculate</button>
+    <p class="result">Result: {{ result }}</p>
+  </div>
+  

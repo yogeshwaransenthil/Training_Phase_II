@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Adjust this value to fit your needs */
+  }
+  
+  input, p, button {
+    margin: 5px;
+  }
+  

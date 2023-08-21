@@ -1,0 +1,6 @@
+<div class="container">
+    <input [(ngModel)]="username" placeholder="Enter username">
+    <p>Username: {{ username }}</p>
+    <button (click)="resetUsername()" [disabled]="username === ''">Reset Username</button>
+  </div>
+  
